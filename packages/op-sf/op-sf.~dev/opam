@@ -1,0 +1,19 @@
+opam-version: "2.0"
+version: "~dev"
+name: "op-sf"
+synopsis: "A curated set of OCaml packages"
+maintainer: "Antonin Décimo <antonin.decimo@gmail.com>"
+authors: "Antonin Décimo <antonin.decimo@gmail.com>"
+license: "MIT"
+homepage: "https://github.com/MisterDA/ocaml-platform"
+bug-reports: "https://github.com/MisterDA/ocaml-platform/issues"
+dev-repo: "git+https://github.com/MisterDA/ocaml-platform"
+build: [
+  [ "false" ] { with-test }
+]
+install: [
+  [ "touch" "%{doc}%/op-sf-doc" ] { with-doc }
+]
+depends: [
+  "op-s"
+]
